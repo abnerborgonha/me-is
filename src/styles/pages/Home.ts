@@ -21,3 +21,10 @@ export const Container = styled.div`
     line-height: 32px;
   }
 `
+
+export const Name = styled.p`
+  color: ${props => props.theme.colors.primary};
+  font: 300 16px Fira Code, sans-serif;
+  font-weight: lighter;
+  text-align: left;
+`
