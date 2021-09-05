@@ -1,9 +1,9 @@
 import React from 'react'
 import Head from 'next/head'
-
-import { Container, Name } from '../styles/pages/Home'
-
 import Header from '../components/Header'
+import { Container, Content } from '../styles/pages/Home'
+
+import Typewriter from 'typewriter-effect'
 
 const Home: React.FC = () => {
   return (
@@ -12,18 +12,31 @@ const Home: React.FC = () => {
         <title>abner.is</title>
       </Head>
       <Header />
-
-      <img
-        src="doctor-js.png"
-        alt="Doctor JS"
-        style={{
-          height: '50%',
-          width: 'auto'
-        }}
-      />
-      <h1>abner.is()</h1>
-      <Name>Abnêr Borgonha</Name>
-      <p>This is my profile</p>
+      <Content>
+        <Typewriter
+          onInit={typewriter => {
+            typewriter
+              .typeString("<a>Hi, my name is Abnêr. I'm a</a> \n")
+              .typeString('<a><strong>Software developer</strong></a>')
+              .deleteChars(18)
+              .pauseFor(1000)
+              .typeString('<a><strong>Co-fouder of Deeplin</strong></a>')
+              .deleteChars(21)
+              .pauseFor(1000)
+              .typeString('<a><strong>Nerd</strong></a>')
+              .deleteChars(4)
+              .pauseFor(1000)
+              .typeString('<a><strong>Dad</strong></a>')
+              .deleteChars(4)
+              .pauseFor(1000)
+              .typeString('<s><strong>Batman</strong></s>')
+              .deleteChars(6)
+              .pauseFor(1100)
+              .typeString('<a><strong>Software developer</strong></a>')
+              .start()
+          }}
+        />
+      </Content>
     </Container>
   )
 }

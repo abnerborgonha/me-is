@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
-import { GithubIcon, LinkedinIcon } from '../../styles/icons/styles'
 import HamburgerMenu from 'react-hamburger-menu'
+
+import theme from '../../styles/theme'
 import { Menu, ListMenu, SocialMidia, Navbar } from './styles'
+import { GithubIcon, LinkedinIcon } from '../../styles/icons/styles'
 
 const Header: React.FC = () => {
-  const [menu, setMenu] = useState(true)
+  const [menu, setMenu] = useState(false)
 
   return (
     <>
@@ -12,13 +14,13 @@ const Header: React.FC = () => {
         <HamburgerMenu
           isOpen={menu}
           menuClicked={() => setMenu(!menu)}
-          color="#fff"
+          color={theme.colors.text}
         />
       </Navbar>
       <Menu open={menu}>
         <ListMenu>
-          <a href="">.is()</a>
-          <a href="">.work()</a>
+          <a href="">.about()</a>
+          <a href="">.tech()</a>
           <a href="">.contact()</a>
         </ListMenu>
         <SocialMidia>

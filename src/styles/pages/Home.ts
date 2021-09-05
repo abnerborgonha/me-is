@@ -5,26 +5,24 @@ export const Container = styled.div`
   height: 100vh;
 
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
-
-  h1 {
-    font-size: 54px;
-    color: ${props => props.theme.colors.primary};
-    margin-top: 40px;
-  }
-
-  p {
-    margin-top: 24px;
-    font-size: 24px;
-    line-height: 32px;
-  }
+  justify-content: center;
 `
 
-export const Name = styled.p`
-  color: ${props => props.theme.colors.primary};
-  font: 300 16px Fira Code, sans-serif;
-  font-weight: lighter;
-  text-align: left;
+export const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+  justify-content: center;
+
+  padding: 16px;
+
+  a,
+  s {
+    color: ${props => props.theme.colors.text};
+    font: 300 22px Fira Code, sans-serif;
+    font-weight: lighter;
+  }
 `

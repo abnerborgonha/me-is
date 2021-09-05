@@ -19,7 +19,7 @@ export const Menu = styled.div<IMenuProps>`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: ${({ theme }) => theme.colors.primary};
+  background: ${({ theme }) => theme.colors.background};
   height: 100vh;
   text-align: left;
   padding: 2rem;
@@ -40,9 +40,9 @@ export const ListMenu = styled.div`
   margin-top: 30vh;
 
   a {
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding: 2rem 0;
-    font-weight: bold;
+    font-weight: lighter;
     font-style: Fira Code;
     letter-spacing: 0.5rem;
     color: ${({ theme }) => theme.colors.text};
@@ -54,9 +54,10 @@ export const ListMenu = styled.div`
     }
 
     &:hover {
+      color: #fff;
+      font-weight: bold;
       transition: transform 0.3s;
       transform: translateY(-2px);
-      color: #fff;
     }
   }
 `
