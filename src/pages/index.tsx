@@ -1,15 +1,19 @@
 import React from 'react'
 import Head from 'next/head'
-import Header from '../components/Header'
-import { Container, Content } from '../styles/pages/Home'
-
 import Typewriter from 'typewriter-effect'
 
+import Header from '../components/Header'
+import Button from '../components/Button'
+
+import { Container, Content, ContainerButton } from '../styles/pages/Home'
+
 const Home: React.FC = () => {
+  const TIME_OF_PAUSE = 1000
+
   return (
     <Container>
       <Head>
-        <title>abner.is</title>
+        <title>.me</title>
       </Head>
       <Header />
       <Content>
@@ -19,24 +23,29 @@ const Home: React.FC = () => {
               .typeString("<a>Hi, my name is Abnêr. I'm a</a> \n")
               .typeString('<a><strong>Software developer</strong></a>')
               .deleteChars(18)
-              .pauseFor(1000)
-              .typeString('<a><strong>Co-fouder of Deeplin</strong></a>')
+              .pauseFor(TIME_OF_PAUSE)
+              .typeString('<a><strong>Co-founder of Deeplin</strong></a>')
               .deleteChars(21)
-              .pauseFor(1000)
+              .pauseFor(TIME_OF_PAUSE)
               .typeString('<a><strong>Nerd</strong></a>')
               .deleteChars(4)
-              .pauseFor(1000)
+              .pauseFor(TIME_OF_PAUSE)
               .typeString('<a><strong>Dad</strong></a>')
               .deleteChars(4)
-              .pauseFor(1000)
+              .pauseFor(TIME_OF_PAUSE)
               .typeString('<s><strong>Batman</strong></s>')
               .deleteChars(6)
-              .pauseFor(1100)
-              .typeString('<a><strong>Software developer</strong></a>')
+              .pauseFor(TIME_OF_PAUSE)
+              .typeString('<a><strong>Software developer.</strong></a>')
               .start()
           }}
         />
       </Content>
+      <ContainerButton>
+        <Button label="About me" />
+        <a>or</a>
+        <Button label="Techs I work" />
+      </ContainerButton>
     </Container>
   )
 }

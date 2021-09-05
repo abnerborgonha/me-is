@@ -13,8 +13,6 @@ export const Container = styled.div`
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
-
-  align-items: flex-start;
   justify-content: center;
 
   padding: 16px;
@@ -25,4 +23,13 @@ export const Content = styled.div`
     font: 300 22px Fira Code, sans-serif;
     font-weight: lighter;
   }
+`
+
+export const ContainerButton = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  min-width: 550px;
+  margin-top: 50px;
 `
