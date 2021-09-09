@@ -1,4 +1,5 @@
 import React from 'react'
+import { GetStaticProps } from 'next'
 import Head from 'next/head'
 import Typewriter from 'typewriter-effect'
 
@@ -48,6 +49,12 @@ const Home: React.FC = () => {
       </ContainerButton>
     </Container>
   )
+}
+
+export const getStaticProps: GetStaticProps = async context => {
+  return {
+    props: {} // will be passed to the page component as props
+  }
 }
 
 export default Home

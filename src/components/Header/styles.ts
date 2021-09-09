@@ -29,6 +29,8 @@ export const Menu = styled.div<IMenuProps>`
   transition: transform 0.3s ease-in-out;
   transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(-100%)')};
 
+  border-right: 1px ${({ theme }) => theme.colors.text} solid;
+
   @media (max-width: 900px) {
     width: 100%;
   }
