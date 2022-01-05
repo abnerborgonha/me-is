@@ -10,7 +10,7 @@ export const Container = styled.div`
   justify-content: center;
 `
 
-export const Content = styled.div`
+export const ContainerTypewriter = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,4 +32,12 @@ export const ContainerButton = styled.div`
 
   min-width: 550px;
   margin-top: 50px;
+`
+export const ContainerSocielMidia = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-top: 50px;
+  padding: 16px;
 `

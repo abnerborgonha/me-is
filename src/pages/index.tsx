@@ -2,8 +2,14 @@ import Head from 'next/head'
 
 import Button from '../components/Button'
 import Typewriter from '../components/Typewriter'
+import SocialMidia from '../components/SocialMidia'
 
-import { Container, Content, ContainerButton } from '../styles/pages/Home'
+import {
+  Container,
+  ContainerButton,
+  ContainerTypewriter,
+  ContainerSocielMidia
+} from '../styles/pages/Home'
 
 const Home: React.FC = () => {
   return (
@@ -11,14 +17,17 @@ const Home: React.FC = () => {
       <Head>
         <title>.me</title>
       </Head>
-      <Content>
+      <ContainerTypewriter>
         <Typewriter />
-      </Content>
+      </ContainerTypewriter>
       <ContainerButton>
         <Button label="About me" />
         <a>or</a>
         <Button label="Techs I work" />
       </ContainerButton>
+      <ContainerSocielMidia>
+        <SocialMidia />
+      </ContainerSocielMidia>
     </Container>
   )
 }
