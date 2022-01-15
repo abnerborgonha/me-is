@@ -19,6 +19,10 @@ const Home: React.FC = () => {
     modalRef.current.handleVisible(stateOptionModal)
   }
 
+  const handleOpenCurriculum = () => {
+    window.open('curriculum.pdf')
+  }
+
   return (
     <>
       <Head>
@@ -33,6 +37,8 @@ const Home: React.FC = () => {
             label="About me"
             onClick={() => handleSetModalVisible('visible')}
           />
+          or
+          <Button label="See my curriculum" onClick={handleOpenCurriculum} />
         </ContainerButton>
         <Modal ref={modalRef} />
         <ContainerSocielMidia>
