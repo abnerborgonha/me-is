@@ -3,7 +3,14 @@ import { ConstainerImage, Image } from './styles'
 const Profile: React.FC = () => {
   return (
     <ConstainerImage>
-      <Image src="/profile.jpeg" height={200} width={200} quality={60} />
+      <Image
+        src="/profile.jpeg"
+        height={200}
+        width={200}
+        quality={60}
+        placeholder="blur"
+        blurDataURL="/profile.jpeg"
+      />
     </ConstainerImage>
   )
 }
