@@ -30,6 +30,9 @@ const ContentModal: React.FC = () => {
           </a>
         </li>
       </ul>
+      <h2>
+        <strong>Techs</strong>
+      </h2>
     </Container>
   )
 }
