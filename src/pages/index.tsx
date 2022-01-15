@@ -12,7 +12,6 @@ import {
   ContainerSocielMidia
 } from '../styles/pages/Home'
 import Modal, { IHandleVisibleOption, IModalHandles } from '../components/Modal'
-
 const Home: React.FC = () => {
   const modalRef = useRef<IModalHandles>()
 
@@ -35,14 +34,7 @@ const Home: React.FC = () => {
             onClick={() => handleSetModalVisible('visible')}
           />
         </ContainerButton>
-        <Modal
-          ref={modalRef}
-          content={
-            <div onClick={() => handleSetModalVisible('unvisible')}>
-              <h1>Teste</h1>
-            </div>
-          }
-        />
+        <Modal ref={modalRef} />
         <ContainerSocielMidia>
           <SocialMidia />
         </ContainerSocielMidia>
