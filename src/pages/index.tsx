@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { useRef } from 'react'
 
 import Button from '../components/Button'
 import Typewriter from '../components/Typewriter'
@@ -10,25 +11,43 @@ import {
   ContainerTypewriter,
   ContainerSocielMidia
 } from '../styles/pages/Home'
+import Modal, { IHandleVisibleOption, IModalHandles } from '../components/Modal'
 
 const Home: React.FC = () => {
+  const modalRef = useRef<IModalHandles>()
+
+  const handleSetModalVisible = (stateOptionModal: IHandleVisibleOption) => {
+    modalRef.current.handleVisible(stateOptionModal)
+  }
+
   return (
-    <Container>
+    <>
       <Head>
         <title>.me</title>
       </Head>
-      <ContainerTypewriter>
-        <Typewriter />
-      </ContainerTypewriter>
-      <ContainerButton>
-        <Button label="About me" />
-        <a>or</a>
-        <Button label="Techs I work" />
-      </ContainerButton>
-      <ContainerSocielMidia>
-        <SocialMidia />
-      </ContainerSocielMidia>
-    </Container>
+      <Container>
+        <ContainerTypewriter>
+          <Typewriter />
+        </ContainerTypewriter>
+        <ContainerButton>
+          <Button
+            label="About me"
+            onClick={() => handleSetModalVisible('visible')}
+          />
+        </ContainerButton>
+        <Modal
+          ref={modalRef}
+          content={
+            <div onClick={() => handleSetModalVisible('unvisible')}>
+              <h1>Teste</h1>
+            </div>
+          }
+        />
+        <ContainerSocielMidia>
+          <SocialMidia />
+        </ContainerSocielMidia>
+      </Container>
+    </>
   )
 }
 export default Home
