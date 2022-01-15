@@ -1,3 +1,5 @@
+import Techs from '../../Techs'
+
 import { Container } from './styles'
 
 const ContentModal: React.FC = () => {
@@ -30,9 +32,11 @@ const ContentModal: React.FC = () => {
           </a>
         </li>
       </ul>
-      <h2>
-        <strong>Techs</strong>
-      </h2>
+      <p>
+        <strong>Techs:</strong>
+      </p>
+
+      <Techs />
     </Container>
   )
 }

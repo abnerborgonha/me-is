@@ -1,8 +1,43 @@
-import styled from 'styled-components'
-import { SiGithub, SiLinkedin } from 'react-icons/si'
+import styled, { StyledComponent, DefaultTheme } from 'styled-components'
+import {
+  SiJest,
+  SiRust,
+  SiCss3,
+  SiHtml5,
+  SiRedis,
+  SiReact,
+  SiLinux,
+  SiGithub,
+  SiRedux,
+  SiPython,
+  SiElixir,
+  SiMongodb,
+  SiLinkedin,
+  SiNextDotJs,
+  SiNodeDotJs,
+  SiPostgresql,
+  SiTypescript,
+  SiJavascript,
+  SiAzuredevops,
+  SiGooglecloud,
+  SiJsonwebtokens
+} from 'react-icons/si'
+import { IconType } from 'react-icons'
+
+const DEFAULT_ICON_SIZE = 35
+const TECHS_ICON_SIZE = 65
+
+export type StyledComponentIcon = StyledComponent<
+  IconType,
+  DefaultTheme,
+  {
+    size: typeof TECHS_ICON_SIZE
+  },
+  'size'
+>
 
 export const GithubIcon = styled(SiGithub).attrs({
-  size: 35
+  size: DEFAULT_ICON_SIZE
 })`
   cursor: pointer;
   margin: 0 10px;
@@ -13,7 +48,7 @@ export const GithubIcon = styled(SiGithub).attrs({
   }
 `
 export const LinkedinIcon = styled(SiLinkedin).attrs({
-  size: 35
+  size: DEFAULT_ICON_SIZE
 })`
   cursor: pointer;
   margin: 0 10px;
@@ -21,5 +56,239 @@ export const LinkedinIcon = styled(SiLinkedin).attrs({
     transition: transform 0.3s;
     transform: translateY(-2px);
     color: #fff;
+  }
+`
+
+export const TypescriptIcon = styled(SiTypescript).attrs({
+  size: TECHS_ICON_SIZE,
+  href: 'https://www.typescriptlang.org/'
+})`
+  cursor: pointer;
+  margin: 10px;
+  &:hover {
+    transition: transform 0.3s;
+    transform: translateY(-2px);
+    color: ${({ theme }) => theme.colors.techs.typescript};
+  }
+`
+export const JavascriptIcon = styled(SiJavascript).attrs({
+  size: TECHS_ICON_SIZE
+})`
+  cursor: pointer;
+  margin: 10px;
+  &:hover {
+    transition: transform 0.3s;
+    transform: translateY(-2px);
+    color: ${({ theme }) => theme.colors.techs.javascript};
+  }
+`
+export const ReactIcon = styled(SiReact).attrs({
+  size: TECHS_ICON_SIZE
+})`
+  cursor: pointer;
+  margin: 10px;
+  &:hover {
+    transition: transform 0.3s;
+    transform: translateY(-2px);
+    color: ${({ theme }) => theme.colors.techs.react};
+  }
+`
+export const ReactNativeIcon = styled(SiReact).attrs({
+  size: TECHS_ICON_SIZE
+})`
+  cursor: pointer;
+  margin: 10px;
+  &:hover {
+    transition: transform 0.3s;
+    transform: translateY(-2px);
+    color: ${({ theme }) => theme.colors.techs.reactnative};
+  }
+`
+export const NodeJSIcon = styled(SiNodeDotJs).attrs({
+  size: TECHS_ICON_SIZE
+})`
+  cursor: pointer;
+  margin: 10px;
+  &:hover {
+    transition: transform 0.3s;
+    transform: translateY(-2px);
+    color: ${({ theme }) => theme.colors.techs.node};
+  }
+`
+export const NextJSIcon = styled(SiNextDotJs).attrs({
+  size: TECHS_ICON_SIZE
+})`
+  cursor: pointer;
+  margin: 10px;
+  &:hover {
+    transition: transform 0.3s;
+    transform: translateY(-2px);
+    color: ${({ theme }) => theme.colors.techs.nextjs};
+  }
+`
+
+export const JWTIcon = styled(SiJsonwebtokens).attrs({
+  size: TECHS_ICON_SIZE
+})`
+  cursor: pointer;
+  margin: 10px;
+  &:hover {
+    transition: transform 0.3s;
+    transform: translateY(-2px);
+    color: ${({ theme }) => theme.colors.techs.jwt};
+  }
+`
+export const HTMLIcon = styled(SiHtml5).attrs({
+  size: TECHS_ICON_SIZE
+})`
+  cursor: pointer;
+  margin: 10px;
+  &:hover {
+    transition: transform 0.3s;
+    transform: translateY(-2px);
+    color: ${({ theme }) => theme.colors.techs.html5};
+  }
+`
+
+export const CSS3Icon = styled(SiCss3).attrs({
+  size: TECHS_ICON_SIZE
+})`
+  cursor: pointer;
+  margin: 10px;
+  &:hover {
+    transition: transform 0.3s;
+    transform: translateY(-2px);
+    color: ${({ theme }) => theme.colors.techs.css3};
+  }
+`
+
+export const PythonIcon = styled(SiPython).attrs({
+  size: TECHS_ICON_SIZE
+})`
+  cursor: pointer;
+  margin: 10px;
+  &:hover {
+    transition: transform 0.3s;
+    transform: translateY(-2px);
+    color: ${({ theme }) => theme.colors.techs.python};
+  }
+`
+
+export const LinuxIcon = styled(SiLinux).attrs({
+  size: TECHS_ICON_SIZE
+})`
+  cursor: pointer;
+  margin: 10px;
+  &:hover {
+    transition: transform 0.3s;
+    transform: translateY(-2px);
+    color: ${({ theme }) => theme.colors.techs.linux};
+  }
+`
+
+export const ReduxIcon = styled(SiRedux).attrs({
+  size: TECHS_ICON_SIZE
+})`
+  cursor: pointer;
+  margin: 10px;
+  &:hover {
+    transition: transform 0.3s;
+    transform: translateY(-2px);
+    color: ${({ theme }) => theme.colors.techs.redux};
+  }
+`
+
+export const PostgresqlIcon = styled(SiPostgresql).attrs({
+  size: TECHS_ICON_SIZE
+})`
+  cursor: pointer;
+  margin: 10px;
+  &:hover {
+    transition: transform 0.3s;
+    transform: translateY(-2px);
+    color: ${({ theme }) => theme.colors.techs.postgresql};
+  }
+`
+
+export const MongoDBIcon = styled(SiMongodb).attrs({
+  size: TECHS_ICON_SIZE
+})`
+  cursor: pointer;
+  margin: 10px;
+  &:hover {
+    transition: transform 0.3s;
+    transform: translateY(-2px);
+    color: ${({ theme }) => theme.colors.techs.mongodb};
+  }
+`
+
+export const RedisIcon = styled(SiRedis).attrs({
+  size: TECHS_ICON_SIZE
+})`
+  cursor: pointer;
+  margin: 10px;
+  &:hover {
+    transition: transform 0.3s;
+    transform: translateY(-2px);
+    color: ${({ theme }) => theme.colors.techs.redis};
+  }
+`
+
+export const JestIcon = styled(SiJest).attrs({
+  size: TECHS_ICON_SIZE
+})`
+  cursor: pointer;
+  margin: 10px;
+  &:hover {
+    transition: transform 0.3s;
+    transform: translateY(-2px);
+    color: ${({ theme }) => theme.colors.techs.jest};
+  }
+`
+
+export const GCPIcon = styled(SiGooglecloud).attrs({
+  size: TECHS_ICON_SIZE
+})`
+  cursor: pointer;
+  margin: 10px;
+  &:hover {
+    transition: transform 0.3s;
+    transform: translateY(-2px);
+    color: ${({ theme }) => theme.colors.techs.gcp};
+  }
+`
+
+export const AzureIcon = styled(SiAzuredevops).attrs({
+  size: TECHS_ICON_SIZE
+})`
+  cursor: pointer;
+  margin: 10px;
+  &:hover {
+    transition: transform 0.3s;
+    transform: translateY(-2px);
+    color: ${({ theme }) => theme.colors.techs.azure};
+  }
+`
+export const RustIcon = styled(SiRust).attrs({
+  size: TECHS_ICON_SIZE
+})`
+  cursor: pointer;
+  margin: 10px;
+  &:hover {
+    transition: transform 0.3s;
+    transform: translateY(-2px);
+    color: ${({ theme }) => theme.colors.techs.rust};
+  }
+`
+
+export const ElixirIcon = styled(SiElixir).attrs({
+  size: TECHS_ICON_SIZE
+})`
+  cursor: pointer;
+  margin: 10px;
+  &:hover {
+    transition: transform 0.3s;
+    transform: translateY(-2px);
+    color: ${({ theme }) => theme.colors.techs.elixir};
   }
 `

@@ -20,7 +20,7 @@ export const Container = styled.div`
     text-align: center;
     list-style-type: none;
 
-    margin-top: 50px;
+    margin: 50px 50px;
   }
   li {
     font-size: 20px;
