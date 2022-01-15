@@ -8,6 +8,7 @@ export const Container = styled.div<IContainerProps>`
   flex-direction: column;
 
   width: 50%;
+  min-width: 800px;
   height: 90vh;
 
   position: absolute;
