@@ -12,6 +12,7 @@ import {
   ContainerSocielMidia
 } from '../styles/pages/Home'
 import Modal, { IHandleVisibleOption, IModalHandles } from '../components/Modal'
+import Profile from '../components/Profile'
 const Home: React.FC = () => {
   const modalRef = useRef<IModalHandles>()
 
@@ -29,6 +30,7 @@ const Home: React.FC = () => {
         <title>.me</title>
       </Head>
       <Container>
+        <Profile />
         <ContainerTypewriter>
           <Typewriter />
         </ContainerTypewriter>
