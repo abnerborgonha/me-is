@@ -5,6 +5,13 @@ export default createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    &::-webkit-scrollbar {
+    width: 5px !important;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: ${props => props.theme.colors.text};
+    }
   }
 
   body {
