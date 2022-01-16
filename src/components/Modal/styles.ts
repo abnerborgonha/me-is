@@ -7,21 +7,22 @@ export const Container = styled.div<IContainerProps>`
   display: ${({ isVisable }) => (isVisable ? 'flex' : 'none')};
   flex-direction: column;
 
-  width: 50%;
-  min-width: 800px;
-  height: 90vh;
-
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  height: 100vh;
+  width: 100%;
 
   border: 1px ${({ theme }) => theme.colors.text} solid;
   background: ${({ theme }) => theme.colors.background};
 
-  @media (max-width: 900px) {
-    height: 100vh;
-    width: 100%;
+  @media (min-width: 900px) {
+    width: 50%;
+    height: 90vh;
+    min-width: 800px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 `
 
@@ -31,9 +32,6 @@ export const ContainerCloseButton = styled.div`
 
   width: 100%;
   padding: 1rem;
-
-  position: absolute;
-  top: 0;
 `
 
 export const CloseButton = styled.button`

@@ -3,16 +3,11 @@ import styled from 'styled-components'
 export const Container = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
-
   flex-direction: column;
-
-  width: 100%;
-  margin-top: 100px;
-  padding: 2rem;
 
   position: relative;
 
+  height: 100%;
   overflow-y: auto;
 
   p {
@@ -27,5 +22,14 @@ export const Container = styled.div`
   li {
     font-size: 20px;
     line-height: 50px;
+  }
+
+  @media (max-width: 900px) {
+    justify-content: flex-start;
+
+    p {
+      text-align: center;
+      margin: 0 20px;
+    }
   }
 `
