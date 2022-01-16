@@ -39,8 +39,27 @@ export default class MyDocument extends Document {
 
   render(): JSX.Element {
     return (
-      <Html lang="pt">
+      <Html lang="en_US">
         <Head>
+          <meta property="og:locale" content="en_US" />
+          <meta property="og:url" content="https://abnerborgonha.com" />
+
+          <meta property="og:title" content="Abnêr Borgonha Developer" />
+          <meta property="og:site_name" content="Me Is" />
+          <meta
+            property="og:description"
+            content="Me is is a project with the objective of talking a little about myself and my journey as a developer."
+          />
+
+          <meta
+            property="og:image"
+            content="https://www.abnerborgonha.com/profile.jpeg"
+          />
+          <meta property="og:image:type" content="image/jpeg" />
+          <meta property="og:image:width" content="800" />
+          <meta property="og:image:height" content="600" />
+
+          <meta property="og:type" content="website" />
           <meta charSet="utf-8" />
           <link
             href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
