@@ -40,7 +40,7 @@ const Home: React.FC = () => {
             onClick={() => handleSetModalVisible('visible')}
           />
           <span>or</span>
-          <Button label="See my curriculum" onClick={handleOpenCurriculum} />
+          <Button label="Curriculum" onClick={handleOpenCurriculum} />
         </ContainerButton>
         <Modal ref={modalRef} />
         <ContainerSocielMidia>

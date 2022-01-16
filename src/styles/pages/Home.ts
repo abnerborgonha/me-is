@@ -30,8 +30,11 @@ export const ContainerButton = styled.div`
   flex-direction: row;
   align-items: center;
 
-  min-width: 550px;
   margin-top: 50px;
+
+  @media (min-width: 900px) {
+    min-width: 550px;
+  }
 `
 export const ContainerSocielMidia = styled.div`
   display: flex;

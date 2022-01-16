@@ -14,6 +14,9 @@ export const Container = styled.button`
 
   border: 1px ${({ theme }) => theme.colors.text} solid;
 
+  @media (max-width: 900px) {
+    font-size: 1rem;
+  }
   &:hover {
     color: ${({ theme }) => theme.colors.background};
     background: ${({ theme }) => theme.colors.text};
