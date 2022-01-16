@@ -6,8 +6,8 @@ const Profile: React.FC = () => {
       <Image
         alt="Image profile to Abnêr Borgonha"
         src="/profile.jpeg"
-        height={1}
-        width={1}
+        height={40}
+        width={40}
         layout="responsive"
         quality={60}
         placeholder="blur"
