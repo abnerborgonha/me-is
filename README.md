@@ -4,6 +4,8 @@
 
 Me is is a project with the objective of talking a little about myself and my journey as a developer.
 
+![image](https://user-images.githubusercontent.com/46171873/149679624-a2c524b8-f5c4-4829-90a1-e90bf39ae3e0.png)
+
 ### 💻 Requirements
 
 - [NodeJS](https://nodejs.org)
