@@ -27,7 +27,7 @@ const Home: React.FC = () => {
   return (
     <>
       <Head>
-        <title>abner.me</title>
+        <title>Me Is</title>
       </Head>
       <Container>
         <Profile />
