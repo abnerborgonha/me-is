@@ -39,7 +39,7 @@ const Home: React.FC = () => {
             label="About me"
             onClick={() => handleSetModalVisible('visible')}
           />
-          or
+          <span>or</span>
           <Button label="See my curriculum" onClick={handleOpenCurriculum} />
         </ContainerButton>
         <Modal ref={modalRef} />
