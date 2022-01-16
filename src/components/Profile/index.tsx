@@ -5,8 +5,9 @@ const Profile: React.FC = () => {
     <ConstainerImage>
       <Image
         src="/profile.jpeg"
-        height={200}
-        width={200}
+        height={1}
+        width={1}
+        layout="responsive"
         quality={60}
         placeholder="blur"
         blurDataURL="/profile.jpeg"
