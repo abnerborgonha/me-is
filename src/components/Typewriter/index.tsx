@@ -6,20 +6,20 @@ const Typewriter: React.FC = () => {
     <TypewriterEffect
       onInit={typewriter => {
         typewriter
-          .typeString("<a>Hi, my name is Abnêr. I'm a</a> \n")
-          .typeString('<a><strong>Software developer</strong></a>')
+          .typeString("<em>Hi, my name is Abnêr. I'm a</em> \n")
+          .typeString('<em><strong>Software developer</strong></em>')
           .deleteChars(18)
           .pauseFor(TIME_OF_PAUSE)
-          .typeString('<a><strong>Nerd</strong></a>')
+          .typeString('<em><strong>Nerd</strong></em>')
           .deleteChars(4)
           .pauseFor(TIME_OF_PAUSE)
-          .typeString('<a><strong>Dad</strong></a>')
+          .typeString('<em><strong>Dad</strong></em>')
           .deleteChars(4)
           .pauseFor(TIME_OF_PAUSE)
           .typeString('<s><strong>Batman</strong></s>')
           .deleteChars(6)
           .pauseFor(TIME_OF_PAUSE)
-          .typeString('<a><strong>Software developer.</strong></a>')
+          .typeString('<em><strong>Software developer.</strong></em>')
           .start()
       }}
     />

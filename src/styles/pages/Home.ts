@@ -17,8 +17,7 @@ export const ContainerTypewriter = styled.div`
 
   padding: 16px;
 
-  a,
-  s {
+  em {
     color: ${props => props.theme.colors.text};
     font: 300 22px Fira Code, sans-serif;
     font-weight: lighter;
