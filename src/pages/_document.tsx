@@ -39,7 +39,7 @@ export default class MyDocument extends Document {
 
   render(): JSX.Element {
     return (
-      <Html lang="en_US">
+      <Html lang="en">
         <Head>
           <meta property="og:locale" content="en_US" />
           <meta property="og:url" content="https://abnerborgonha.com" />
