@@ -61,7 +61,7 @@ export const LinkedinIcon = styled(SiLinkedin).attrs({
 
 export const TypescriptIcon = styled(SiTypescript).attrs({
   size: TECHS_ICON_SIZE,
-  href: 'https://www.typescriptlang.org/'
+  alt: 'Typescript Icon'
 })`
   cursor: pointer;
   margin: 10px;
@@ -72,7 +72,8 @@ export const TypescriptIcon = styled(SiTypescript).attrs({
   }
 `
 export const JavascriptIcon = styled(SiJavascript).attrs({
-  size: TECHS_ICON_SIZE
+  size: TECHS_ICON_SIZE,
+  alt: 'Javascript Icon'
 })`
   cursor: pointer;
   margin: 10px;
@@ -83,7 +84,8 @@ export const JavascriptIcon = styled(SiJavascript).attrs({
   }
 `
 export const ReactIcon = styled(SiReact).attrs({
-  size: TECHS_ICON_SIZE
+  size: TECHS_ICON_SIZE,
+  alt: 'React Icon'
 })`
   cursor: pointer;
   margin: 10px;
@@ -94,7 +96,8 @@ export const ReactIcon = styled(SiReact).attrs({
   }
 `
 export const ReactNativeIcon = styled(SiReact).attrs({
-  size: TECHS_ICON_SIZE
+  size: TECHS_ICON_SIZE,
+  alt: 'React Native Icon'
 })`
   cursor: pointer;
   margin: 10px;
@@ -105,7 +108,8 @@ export const ReactNativeIcon = styled(SiReact).attrs({
   }
 `
 export const NodeJSIcon = styled(SiNodeDotJs).attrs({
-  size: TECHS_ICON_SIZE
+  size: TECHS_ICON_SIZE,
+  alt: 'NodeJS Icon'
 })`
   cursor: pointer;
   margin: 10px;
@@ -116,7 +120,8 @@ export const NodeJSIcon = styled(SiNodeDotJs).attrs({
   }
 `
 export const NextJSIcon = styled(SiNextDotJs).attrs({
-  size: TECHS_ICON_SIZE
+  size: TECHS_ICON_SIZE,
+  alt: 'NextJS Icon'
 })`
   cursor: pointer;
   margin: 10px;
@@ -128,7 +133,8 @@ export const NextJSIcon = styled(SiNextDotJs).attrs({
 `
 
 export const JWTIcon = styled(SiJsonwebtokens).attrs({
-  size: TECHS_ICON_SIZE
+  size: TECHS_ICON_SIZE,
+  alt: 'Json Web Tolken Icon'
 })`
   cursor: pointer;
   margin: 10px;
@@ -139,7 +145,8 @@ export const JWTIcon = styled(SiJsonwebtokens).attrs({
   }
 `
 export const HTMLIcon = styled(SiHtml5).attrs({
-  size: TECHS_ICON_SIZE
+  size: TECHS_ICON_SIZE,
+  alt: 'HTML Icon'
 })`
   cursor: pointer;
   margin: 10px;
@@ -151,7 +158,8 @@ export const HTMLIcon = styled(SiHtml5).attrs({
 `
 
 export const CSS3Icon = styled(SiCss3).attrs({
-  size: TECHS_ICON_SIZE
+  size: TECHS_ICON_SIZE,
+  alt: 'CSS Icon'
 })`
   cursor: pointer;
   margin: 10px;
@@ -163,7 +171,8 @@ export const CSS3Icon = styled(SiCss3).attrs({
 `
 
 export const PythonIcon = styled(SiPython).attrs({
-  size: TECHS_ICON_SIZE
+  size: TECHS_ICON_SIZE,
+  alt: 'Python Icon'
 })`
   cursor: pointer;
   margin: 10px;
@@ -175,7 +184,8 @@ export const PythonIcon = styled(SiPython).attrs({
 `
 
 export const LinuxIcon = styled(SiLinux).attrs({
-  size: TECHS_ICON_SIZE
+  size: TECHS_ICON_SIZE,
+  alt: 'Linux Icon'
 })`
   cursor: pointer;
   margin: 10px;
@@ -187,7 +197,8 @@ export const LinuxIcon = styled(SiLinux).attrs({
 `
 
 export const ReduxIcon = styled(SiRedux).attrs({
-  size: TECHS_ICON_SIZE
+  size: TECHS_ICON_SIZE,
+  alt: 'Redux Icon'
 })`
   cursor: pointer;
   margin: 10px;
@@ -199,7 +210,8 @@ export const ReduxIcon = styled(SiRedux).attrs({
 `
 
 export const PostgresqlIcon = styled(SiPostgresql).attrs({
-  size: TECHS_ICON_SIZE
+  size: TECHS_ICON_SIZE,
+  alt: 'Postgres SQL Icon'
 })`
   cursor: pointer;
   margin: 10px;
@@ -211,7 +223,8 @@ export const PostgresqlIcon = styled(SiPostgresql).attrs({
 `
 
 export const MongoDBIcon = styled(SiMongodb).attrs({
-  size: TECHS_ICON_SIZE
+  size: TECHS_ICON_SIZE,
+  alt: 'Mongo DB Icon'
 })`
   cursor: pointer;
   margin: 10px;
@@ -223,7 +236,8 @@ export const MongoDBIcon = styled(SiMongodb).attrs({
 `
 
 export const RedisIcon = styled(SiRedis).attrs({
-  size: TECHS_ICON_SIZE
+  size: TECHS_ICON_SIZE,
+  alt: 'Redis Icon'
 })`
   cursor: pointer;
   margin: 10px;
@@ -235,7 +249,8 @@ export const RedisIcon = styled(SiRedis).attrs({
 `
 
 export const JestIcon = styled(SiJest).attrs({
-  size: TECHS_ICON_SIZE
+  size: TECHS_ICON_SIZE,
+  alt: 'Jest Icon'
 })`
   cursor: pointer;
   margin: 10px;
@@ -247,7 +262,8 @@ export const JestIcon = styled(SiJest).attrs({
 `
 
 export const GCPIcon = styled(SiGooglecloud).attrs({
-  size: TECHS_ICON_SIZE
+  size: TECHS_ICON_SIZE,
+  alt: 'Google Clound Plataform Icon'
 })`
   cursor: pointer;
   margin: 10px;
@@ -259,7 +275,8 @@ export const GCPIcon = styled(SiGooglecloud).attrs({
 `
 
 export const AzureIcon = styled(SiAzuredevops).attrs({
-  size: TECHS_ICON_SIZE
+  size: TECHS_ICON_SIZE,
+  alt: 'Azure Cloud Icon'
 })`
   cursor: pointer;
   margin: 10px;
@@ -270,7 +287,8 @@ export const AzureIcon = styled(SiAzuredevops).attrs({
   }
 `
 export const RustIcon = styled(SiRust).attrs({
-  size: TECHS_ICON_SIZE
+  size: TECHS_ICON_SIZE,
+  alt: 'Rust Icon'
 })`
   cursor: pointer;
   margin: 10px;
@@ -282,7 +300,8 @@ export const RustIcon = styled(SiRust).attrs({
 `
 
 export const ElixirIcon = styled(SiElixir).attrs({
-  size: TECHS_ICON_SIZE
+  size: TECHS_ICON_SIZE,
+  alt: 'Elixir Icon'
 })`
   cursor: pointer;
   margin: 10px;
