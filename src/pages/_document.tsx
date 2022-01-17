@@ -82,6 +82,10 @@ export default class MyDocument extends Document {
             sizes="16x16"
             href="/favicons/favicon-16x16.png"
           />
+          <meta
+            name="description"
+            content="Me is is a project with the objective of talking a little about myself and my journey as a developer."
+          ></meta>
           <meta name="msapplication-TileColor" content="#ffffff" />
           <meta name="theme-color" content="#ffffff"></meta>
         </Head>
