@@ -1,4 +1,4 @@
-import Techs from '../../global/Techs'
+import Techs from './Techs'
 
 import { Container } from './styles'
 
