@@ -33,21 +33,3 @@ export const ContainerCloseButton = styled.div`
   width: 100%;
   padding: 1rem;
 `
-
-export const CloseButton = styled.button`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  height: 20px;
-  padding: 20px;
-
-  border: 1px solid ${({ theme }) => theme.colors.text};
-  background-color: ${({ theme }) => theme.colors.background};
-
-  font-size: 28px;
-  font-weight: bold;
-  color: ${({ theme }) => theme.colors.text};
-
-  cursor: pointer;
-`

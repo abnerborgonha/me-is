@@ -4,9 +4,10 @@ import React, {
   useCallback,
   useImperativeHandle
 } from 'react'
+import CloseButton from '../CloseButton'
 import ContentModal from './ContentModal'
 
-import { CloseButton, Container, ContainerCloseButton } from './styles'
+import { Container, ContainerCloseButton } from './styles'
 export type IHandleVisibleOption = 'visible' | 'unvisible'
 
 export interface IModalHandles {
@@ -30,7 +31,7 @@ const Modal: React.ForwardRefRenderFunction<IModalHandles> = (_, ref) => {
   return (
     <Container isVisable={visable}>
       <ContainerCloseButton>
-        <CloseButton onClick={() => setVisable(false)}>X</CloseButton>
+        <CloseButton onClick={() => setVisable(false)} />
       </ContainerCloseButton>
       <ContentModal />
     </Container>
