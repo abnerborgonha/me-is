@@ -20,7 +20,7 @@ import {
   ReactNativeIcon,
   StyledComponentIcon,
   ElixirIcon
-} from '../../styles/icons/styles'
+} from '../../../styles/icons/styles'
 
 interface ITech {
   icon: StyledComponentIcon
