@@ -1,8 +1,8 @@
-import Techs from '../../Techs'
+import Techs from './Techs'
 
 import { Container } from './styles'
 
-const ContentModal: React.FC = () => {
+const HomeModalContent: React.FC = () => {
   return (
     <Container>
       <p>I&apos;m Abnêr Borgonha</p>
@@ -41,4 +41,4 @@ const ContentModal: React.FC = () => {
   )
 }
 
-export default ContentModal
+export default HomeModalContent

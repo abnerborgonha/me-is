@@ -1,4 +1,4 @@
-import { GithubIcon, LinkedinIcon } from '../../styles/icons/styles'
+import { GithubIcon, LinkedinIcon } from '../../../styles/icons/styles'
 
 import { Container } from './styles'
 
