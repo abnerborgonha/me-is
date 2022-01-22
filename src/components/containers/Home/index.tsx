@@ -14,6 +14,8 @@ import {
   ContainerSocielMidia
 } from './styles'
 
+import constantsValueToHomePage from '../../../constants/containers/home'
+
 const Home: React.FC = () => {
   const modalRef = useRef<IModalHandles>()
 
@@ -22,7 +24,7 @@ const Home: React.FC = () => {
   }
 
   const handleOpenCurriculum = () => {
-    window.open('curriculum.pdf')
+    window.open(constantsValueToHomePage.curriculumPath)
   }
 
   return (
